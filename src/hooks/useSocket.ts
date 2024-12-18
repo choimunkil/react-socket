@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Socket, io } from "socket.io-client";
 // back url 은 chat namespace 사용
-const back_url = "http://localhost:3010/chat";
+const back_url = "https://node-socket-three.vercel.app/chat";
 const sockets: { [key: string]: Socket } = {};
 const useSocket = (idx: string) => {
   // socket 유지를 위햇 state에 socket 인스턴스를 담아서 사용함
